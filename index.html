@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Formation Lilix — guide complet du développement web : front-end, back-end, DevOps, HTML, CSS, JavaScript, React, réseaux, DNS, Tor. FR / AR / EN." />
+  <meta name="theme-color" content="#04AA6D" />
+  <title>Lilix Docs — Formation développement web</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%2304AA6D'/><text x='32' y='44' font-size='36' text-anchor='middle' fill='white' font-family='sans-serif'>L</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Source+Code+Pro:wght@400;600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#article" data-i18n="skip">Aller au contenu</a>
+
+  <header class="topbar">
+    <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-controls="sidebar" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
+    <a class="brand" href="#/home" id="brandLink">
+      <span class="brand-mark">L</span>
+      <span class="brand-text">
+        <strong>Lilix Docs</strong>
+        <small data-i18n="tagline">Formation web complète</small>
+      </span>
+    </a>
+    <label class="search-wrap">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79L20 20.49 21.49 19 15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+      <input id="searchInput" type="search" autocomplete="off" data-i18n-placeholder="searchPlaceholder" placeholder="Rechercher…" />
+      <kbd>/</kbd>
+    </label>
+    <div class="top-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="fr">FR</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ar">عربي</button>
+      </div>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Theme">
+        <span class="theme-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <nav id="sidebarNav" aria-label="Chapters"></nav>
+    </aside>
+    <div class="overlay" id="overlay" hidden></div>
+
+    <main class="main">
+      <div class="crumbs" id="crumbs"></div>
+      <article class="article" id="article"></article>
+      <nav class="pager" id="pager"></nav>
+      <footer class="site-footer">
+        <p data-i18n="footer">Formation Lilix — documentation pédagogique. HTML, CSS, JavaScript, React, réseaux et métiers du web.</p>
+      </footer>
+    </main>
+  </div>
+
+  <div class="search-panel" id="searchPanel" hidden>
+    <div class="search-panel-head">
+      <strong data-i18n="searchResults">Résultats</strong>
+      <span id="searchCount"></span>
+    </div>
+    <div id="searchResults"></div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
